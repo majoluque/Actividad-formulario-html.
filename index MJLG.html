@@ -1,0 +1,166 @@
+<style>
+fieldset{
+        border: 2px solid #000000;
+        border-radius: 12px;
+        padding: 15px;
+        background-color: #fff;
+    }
+ button{
+        background-color: rgb(222,228,231);
+        color: rgb(22, 21, 21);
+        border: 2px solid #090909; ;
+        padding: 10px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+</style>
+<form action="#" method="post">
+    <body style="background-color: #f2f2f2;"> </body>  <!-- Color de fondo -->
+ 
+    <fieldset style="background-color: #ffe5ec;"> <!-- Color del cuadro -->
+
+        <legend style="background-color: rgb(222, 228, 231); padding: 8px;
+            border: 2px solid black; 
+            border-radius: 10px;">
+            DATOS PERSONALES
+        </legend>    <!-- Color del texto -->
+
+        <label for="nombre"> Nombres y apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="80";>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
+        <br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="0999999999" pattern="[0-9]
+        {10}">
+        <br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="80" required>
+        <br><br>
+        
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+    </fieldset>
+
+    <br>
+
+    <fieldset style="background-color: #ffe5ec;">
+        
+       <legend style="background-color: rgb(222,228,231);padding: 8px; 
+            border: 2px solid black; 
+            border-radius: 10px;">  
+            DATOS ACADÉMICOS
+        </legend>   
+
+        <label for="carrera">Carrera o curso:</label>
+        <input type="text" id="carrera" name="carrera" required>
+        <br><br>
+
+        <label for="nivel">Nivel académico:</label>
+        <select id="nivel" name="nivel" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Bachillerato">Bachillerato</option>
+            <option value="Tecnologico">Tecnológico</option>
+            <option value="Universitario">Universitario</option>
+        </select>
+        <br><br>
+
+        <label for="institucion">Institución educativa:</label>
+        <input type="text" id="institucion" name="institucion">
+    </fieldset>
+    <br>
+    <fieldset style="background-color: #ffe5ec;">
+        <legend style="background-color: rgb(222, 228, 231); padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;">
+            PREFERENCIAS DEL TALLER  
+        </legend>
+      
+        <p>Modalidad:</p>
+        <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+        <label for="presencial">Presencial</label> <br></br>
+
+        <input type="radio" id="virtual" name="modalidad" value="virtual">
+        <label for="virtual">Virtual</label> <br></br>
+
+        <input type="radio" id="hibrida" name="modalidad" value="hibrida">
+        <label for="hibrida">Híbrida</label> <br></br>
+
+        <p>Temas de interés:</p>
+        <input type="checkbox" id="html" name="temas" value="html">
+        <label for="html">HTML</label> <br></br>
+
+        <input type="checkbox" id="css" name="temas" value="css">
+        <label for="css">CSS</label><br></br>
+
+        <input type="checkbox" id="js" name="temas" value="javascript">
+        <label for="js">JavaScript</label>
+
+        <br><br>
+
+        <label for="color"> Color favorito:</label>
+        <input type="color" id="color" name="color">
+        <br><br>
+
+        <label for="motivacion">Nivel de motivación:</label>
+        <input type="range" id="motivacion" name="motivacion" min="1" max="10">
+    </fieldset>
+    <br>
+    <fieldset style="background-color: #ffe5ec;">
+        <legend style="background-color: rgb(222, 228, 231); padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;">
+         DISPONIBILIDAD  
+        </legend>
+
+        <label for="fecha_inicio">Fecha preferida:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio">
+        <br><br>
+
+        <label for="hora">Hora disponible:</label>
+        <input type="time" id="hora" name="hora">
+        <br><br>
+
+        <label for="jornada">Jornada preferida:</label>
+        <select id="jornada" name="jornada">
+            <option value="manana">Mañana</option>
+            <option value="tarde">Tarde</option>
+            <option value="noche">Noche</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="background-color: #ffe5ec;">  
+        <legend style="background-color: rgb(222, 228, 231); padding: 8px;
+            border: 2px solid black;
+            border-radius: 10px;">
+            INFORMACIÓN ADICIONAL
+        </legend>
+
+        <label for="archivo">Subir archivo de ejemplo:</label>
+        <input type="file" id="archivo" name="archivo">
+        <br><br>
+
+        <label for="portafolio">Portafolio o perfil:</label>
+        <input type="url" id="portafolio" name="portafolio" placeholder="https://ejemplo.com">
+        <br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label>
+        <br>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="40"></textarea>
+    </fieldset>
+
+    <br>
+    <div style="text-align: center;">
+        <button type="submit">Enviar inscripción</button>
+        <button type="reset">Limpiar formulario</button>
+    </div>
+</form>
